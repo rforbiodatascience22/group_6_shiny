@@ -12,8 +12,8 @@ app_ui <- function(request) {
     fluidPage(
       h1("shinyDogma"),
       tabsetPanel(
-        tabPanel(title = "panel1",
-                 "module1"),
+        tabPanel(title = "Ribosome",
+                 mod_ribosome_ui("ribosome_1")),
         tabPanel(title = "Plotting",
                  mod_plot_module_ui("plot_module_1"))
       )
