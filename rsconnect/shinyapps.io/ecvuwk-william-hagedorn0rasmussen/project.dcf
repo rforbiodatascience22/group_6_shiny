@@ -1,4 +1,4 @@
-name: project
+name: shinyDogma
 title:
 username:
 account: ecvuwk-william-hagedorn0rasmussen
@@ -6,6 +6,6 @@ server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5954474
 bundleId: 5736822
-url: https://ecvuwk-william-hagedorn0rasmussen.shinyapps.io/project/
+url: https://ecvuwk-william-hagedorn0rasmussen.shinyapps.io/shinyDogma/
 when: 1648496155.04231
 lastSyncTime: 1648496155.04232
