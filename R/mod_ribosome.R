@@ -43,8 +43,10 @@ mod_ribosome_server <- function(id){
         centralDogma::translate_codon()
         }
         )
-    observeEvent(input$do, {output$DNA_seq <- renderPrint(input$seq_length %>%
-          centralDogma::create_random_dna_seq())})
+    observeEvent(input$do, {output$DNA_seq <- renderPrint(
+        input$seq_length %>%
+          centralDogma::create_random_dna_seq()
+        )})
   })
 }
 
