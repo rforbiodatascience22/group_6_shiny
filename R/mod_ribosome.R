@@ -15,10 +15,16 @@ mod_ribosome_ui <- function(id){
              textAreaInput(inputId = ns("q_seq"),
                               label = "DNA sequence",
                               placeholder = "Insert DNA sequence")),
-      column(4, "random_dna_length", "generate_dna_button")
+      column(4,
+             numericInput(inputId = ns("seq_length"),
+                          label = "Desired length of randomly generated DNA-sequence",
+                          value = 3),
+             actionButton(inputId = ns("do"),
+                          label = "Get DNA-sequence")
+             )
     ),
-    verbatimTextOutput(outputId = ns("pep_seq"))
-  )
+    verbatimTextOutput(outputId = ns("pep_seq")),
+    verbatimTextOutput(outputId = ns("DNA_seq")))
 }
 
 #' ribosome Server Functions
@@ -27,10 +33,9 @@ mod_ribosome_ui <- function(id){
 mod_ribosome_server <- function(id){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
-    output$pep_seq <-
-      renderPrint(
-        if(input$q_seq == "")
-        {NULL}
+    output$pep_seq <- renderPrint(
+      if(input$q_seq == "")
+        {""}
         else{
         input$q_seq %>%
         centralDogma::convert_dna_to_rna() %>%
@@ -38,6 +43,8 @@ mod_ribosome_server <- function(id){
         centralDogma::translate_codon()
         }
         )
+    observeEvent(input$do, {output$DNA_seq <- renderPrint(input$seq_length %>%
+          centralDogma::create_random_dna_seq())})
   })
 }
 
