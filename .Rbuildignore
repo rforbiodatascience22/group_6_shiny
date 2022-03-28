@@ -9,3 +9,6 @@ $run_dev.*
 ^myshinyapp.*\.tgz$
 ^LICENSE\.md$
 ^README\.Rmd$
+^shinyDogma\.Rcheck$
+^shinyDogma.*\.tar\.gz$
+^shinyDogma.*\.tgz$
