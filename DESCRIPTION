@@ -1,13 +1,9 @@
 Package: shinyDogma
-Title: An Amazing Shiny App
+Title: shinyDogma
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
-Description: What the package does (one paragraph).
-License: What license is it under?
+Authors@R: person('Eskild', 'Angen', email = 's184241@dtu.dk', role = c('cre', 'aut'))
+Description: Description coming.
+License: MIT + file LICENSE
 Imports: 
     config (>= 0.3.1),
     golem (>= 0.3.2),
