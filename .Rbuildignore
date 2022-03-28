@@ -9,3 +9,5 @@ $run_dev.*
 ^shinyDogma\.Rcheck$
 ^shinyDogma.*\.tar\.gz$
 ^shinyDogma.*\.tgz$
+^app\.R$
+^rsconnect$
