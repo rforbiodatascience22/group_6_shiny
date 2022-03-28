@@ -30,7 +30,15 @@ mod_plot_module_ui <- function(id){
 mod_plot_module_server <- function(id){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
-    output$hist <- renderPlot(centralDogma::get_freq_plot(input$seq))
+    output$hist <-
+      renderPlot(
+        if(input$seq == "")
+        {NULL}
+        else{
+          input$seq %>%
+        centralDogma::get_freq_plot()
+          }
+      )
 
   })
 }
