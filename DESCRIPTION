@@ -9,7 +9,7 @@ Author@R:
     person(given = "William",
            family = "Hagedorn-Rasmussen",
            role = "aut",
-           email = "s194545@"),
+           email = "s194545@dtu.dk"),
     person(given = "firstname",
            family = "lastname",
            role = "aut",
