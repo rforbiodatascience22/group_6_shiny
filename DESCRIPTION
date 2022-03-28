@@ -18,10 +18,10 @@ Author@R:
            family = "Oyan",
            role = "aut",
            email = "s194564@dtu.dk"),
-    person(given = "firstname",
-           family = "lastname",
+    person(given = "Joachim",
+           family = "Breitenstein",
            role = "aut",
-           email = "your@email.com"))
+           email = "joachim.breitenstein@hotmail.com")
 Description: Description coming.
 License: MIT + file LICENSE
 Imports: 
