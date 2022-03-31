@@ -19,13 +19,13 @@ Group members:
 
 # Discussions  
 ## What did you find most challenging about creating a shiny app?  
-Usually when programming, a script is run from the top down. This is not the case for a shiny app. The workflow is then way different. Further, a ton of new functions were introduced and this created a lot of confusion. There were simply a lot of new stuff to grasp. Figuring out exactly what 'ui' and 'server' meant in this regard.  
+Usually when programming, a script is run from the top down. This is not the case for a shiny app. The workflow is then way different. Further, a ton of new functions were introduced and this created a lot of confusion. There were simply a lot of new stuff to grasp. Also, figuring out exactly what 'ui' and 'server' meant in this regard.
 
 ## What do you feel are the benefits and challenges with using golem for app development?  
 A clear benefit is, that it sets up the whole app as a package. This makes it all structured, streamlined and universal. That function also impose a challenge, as the load of new functions/files seem overwhelming. Especially for beginners who don't know how to exploit all of these functionalities (e.g. us).  
 
 ## Maintaining reproducibility when using shiny apps is a challenge. As an example, some pharma-companies display databases to medical doctors for pointy-clicky data exploration. What are your thoughts on maintaining reproducibility in that scenario? What if the database is updated or the app is updated with new or changed functionality?  
-No clue what to write here.  
+Unless the pointy-clicky app has a account-based backlog, reproducibility of searches will be difficult and maybe impossible across versions. A purely point-and-click interface will make difficult large databases difficult to navigate, and doctors might have to rely on memory of certain entries.
 
 ## What other challenges and limitations do you see shiny apps may have? Please elaborate.  
 As with packages, there can be a lot of dependencies. If a package is updated/changed, and the shiny app is re-deployed, it might not work as intended. The app then requires maintenance.
